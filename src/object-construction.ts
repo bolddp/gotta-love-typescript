@@ -1,7 +1,8 @@
 const number01 = 12;
 const number02 = 13;
+const oopsAString = "hej";
 
-const arrayOfNumbers = [number01, number02];
+const arrayOfNumbers = [number01, number02, oopsAString];
 
 interface ComplexArrayObject {
   aRequiredNumber: number;

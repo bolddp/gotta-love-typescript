@@ -1,8 +1,13 @@
-interface Employee {
+import { Address } from "./interface-declarations";
+
+export interface Employee {
   name: string;
   age: number;
   address: Address;
+  updatedAt?: number;
 }
+
+export type PatchEmployee = Partial<Employee>;
 
 const anEmployee: Employee = {
   name: "Benny",
@@ -24,4 +29,16 @@ const employeeWithUpdatedAddress: Employee = {
     ...anEmployee.address,
     number: "14",
   },
+};
+
+/**
+ * Multi spreading
+ */
+const updateEmployee = (employeeId: string, updates: PatchEmployee) => {
+  const existing: Employee = getFromDatabase(employeeId);
+  const updated: Employee = {
+    ...existing,
+    ...updates,
+    updatedAt: Date.now(),
+  };
 };

@@ -1,17 +1,17 @@
-interface Person {
+export interface Person {
   name: string;
 }
 
-interface PersonWithAdress {
+export interface PersonWithAdress extends Person {
   address?: Address;
 }
 
-interface Address {
+export interface Address {
   street: string;
   number: string;
 }
 
-interface PersonWithInlineAddress {
+export interface PersonWithInlineAddress {
   name: string;
   address?: {
     street: string;
