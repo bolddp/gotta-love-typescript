@@ -1,0 +1,44 @@
+// Create interface
+
+export interface Person {
+  name: string;
+  yearOfBirth: number;
+}
+
+// Create function to log interface
+
+const logPerson = (person: Person) => {
+  console.log(`Person: ${JSON.stringify(person)}`);
+}
+
+// Declare person
+
+const person = {
+  name: 'Daniel',
+}
+
+// No errors yet!
+// Try to use interface
+
+logPerson(implicitPerson); // <-- Error is here
+
+// Change to explicit person, error now in correct place
+const person: Person = {
+  name: 'Daniel',
+}
+
+// Add yearOfBirth to remove error
+
+const person: Person = {
+  name: 'Daniel',
+  yearOfBirth: 1972
+}
+
+// Declare in function call
+
+logPerson({
+  name: 'Benny',
+  yearOfBirth: 1980
+});
+
+

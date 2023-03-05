@@ -1,4 +1,4 @@
-import { Address } from "./interface-declarations";
+import { Address } from "./02 interface and types";
 
 export interface Employee {
   name: string;

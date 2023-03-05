@@ -1,0 +1,5 @@
+/node_modules
+/cdk.out
+/dist
+/test-results
+/docker-compose.yml

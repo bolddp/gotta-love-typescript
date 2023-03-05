@@ -1,0 +1,25 @@
+{
+  "name": "gotta-love-typescript",
+  "version": "1.0.0",
+  "description": "- Tooling\r   - VS Code\r   - NVM\r   - Node\r   - NPM\r - Resources\r   - Typescript Playground https://www.typescriptlang.org/play\r   - Typescript Handbook https://www.typescriptlang.org/docs/handbook/intro.html\r - NPM init\r - tsc --init\r - package.json\r - Caveats\r   - unit testing (no reflection etc.)\r - Typescript - general talking points",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bolddp/gotta-love-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bolddp/gotta-love-typescript/issues"
+  },
+  "homepage": "https://github.com/bolddp/gotta-love-typescript#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1328.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.6"
+  }
+}

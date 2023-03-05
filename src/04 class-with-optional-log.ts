@@ -1,3 +1,5 @@
+// Optional properties and optional chaining
+
 export interface ServiceConfig {
   log?: (msg: string) => void;
 }
