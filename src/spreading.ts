@@ -1,33 +1,33 @@
-import { Address } from "./02 interface and types";
+import { Address } from './02 interface and types';
 
 export interface Employee {
+  id: string;
   name: string;
   age: number;
   address: Address;
   updatedAt?: number;
 }
 
-export type PatchEmployee = Partial<Employee>;
-
 const anEmployee: Employee = {
-  name: "Benny",
+  id: 'e01',
+  name: 'Benny',
   age: 48,
   address: {
-    street: "Götavägen",
-    number: "12",
+    street: 'Götavägen',
+    number: '12',
   },
 };
 
 const employeeWithUpdatedName: Employee = {
   ...anEmployee,
-  name: "Bönny",
+  name: 'Bönny',
 };
 
 const employeeWithUpdatedAddress: Employee = {
   ...anEmployee, // <-- Cannot be removed, will break contract
   address: {
     ...anEmployee.address,
-    number: "14",
+    number: '14',
   },
 };
 
